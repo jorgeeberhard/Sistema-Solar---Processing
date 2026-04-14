@@ -19,12 +19,12 @@ class Planet {
     orbitspeed = random(0.01,0.03);
     
     // create the Moon 24 pixels from the planet with a diameter of 5
-    moon = new Moon(24,8);
+    moon = new Moon(random(1, 24), random(1, 8));
     
     planet_color = color(random(255), random(255), random(255));
     
     if(has_second_moon) {
-      moon2 = new Moon(30, 12);
+      moon2 = new Moon(random(1, 24), random(1, 8));
       second_moon = true;
     }
   }
