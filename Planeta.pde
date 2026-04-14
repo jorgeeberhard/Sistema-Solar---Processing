@@ -20,7 +20,7 @@ class Planet {
     moon = new Moon(24,8);
     
     if(has_second_moon) {
-      moon2 = new Moon(24, 8);
+      moon2 = new Moon(30, 12);
       second_moon = true;
     }
   }
