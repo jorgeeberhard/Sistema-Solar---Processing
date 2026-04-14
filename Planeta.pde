@@ -10,6 +10,8 @@ class Planet {
   Moon moon2;
   boolean second_moon = false;
   
+  color planet_color;
+  
   Planet(float distance_, float diameter_, boolean has_second_moon) {
     distance = distance_;
     diameter = diameter_;
@@ -18,6 +20,8 @@ class Planet {
     
     // create the Moon 24 pixels from the planet with a diameter of 5
     moon = new Moon(24,8);
+    
+    planet_color = color(random(255), random(255), random(255));
     
     if(has_second_moon) {
       moon2 = new Moon(30, 12);
@@ -44,7 +48,7 @@ class Planet {
     // translate out distance
     translate(distance,0); 
     stroke(0);
-    fill(175);
+    fill(planet_color);
     ellipse(0,0,diameter,diameter);
     // The planet is drawn, now draw the moon
     moon.display();
