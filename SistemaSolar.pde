@@ -4,9 +4,12 @@ Planet[] planets = new Planet[3];
 void setup() {
   size(480, 270);
 
+  int planeta_com_segunda_lua = int(random(planets.length));
+
   // The planet objects are initialized using the counter variable
   for (int i = 0; i < planets.length; i++ ) {
-    planets[i] = new Planet(60 + i*36, 24);
+    boolean segunda_lua = (i == planeta_com_segunda_lua);
+    planets[i] = new Planet(60 + i*36, 24, segunda_lua);
   }
 }
 
