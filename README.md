@@ -1,3 +1,5 @@
+# Alunos: Jorge Conceição, Matheus Duarte
+
 # Etapa 2
 
 A incrementação do theta é feito dentro da função `update()` das classes `Planet` e `Moon`
